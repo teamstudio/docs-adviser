@@ -660,7 +660,7 @@
 <p><img alt="Support Data View" src="../img/import_supporting_data.png" /></p>
 </figure>
 <p>This view contains the raw files that Adviser will import. The view is categorized on the date on which the data was collected, and the attachment names listed in the view include the name of the server from which the data was collected.</p>
-<p>Adviser will import data for the date ranges available in this view.  To limit the amount of data imported to Adviser, make a copy of Usage Auditor and delete older entries as desired.</p>
+<p>Adviser will import data for the date ranges available in this view. To limit the amount of data imported to Adviser, make a copy of Usage Auditor and delete older entries as desired.</p>
 <p>Gaps in the dates of these files indicate that either <em>Save Supporting Data</em> was disabled during the time of the gap, or Usage collection failed to run (e.g. due to the Usage workstation being shut off.) In Usage Auditor 5.x, data is collected for all available activity on the server since the last successful scan; gaps smaller than 10 days should not represent missing data. In 4.x, data was collected nightly for the prior day only. If there are significant gaps (more than 10 days in 5.x), limiting the import to the data available after the gaps will improve accuracy, but shorten the reporting period.</p>
 <h2 id="skipping-servers">Skipping Servers</h2>
 <p>Adviser requires all servers in the import data to be defined in Adviser and successfully scanned prior to import.</p>
@@ -678,7 +678,7 @@
 <h2 id="importing-both-4x-and-5x-usage-auditor-usage">Importing Both 4.x and 5.x Usage Auditor Usage</h2>
 <p>Notes and Domino timestamps are stored with 100th of a second precision, and Usage Auditor 5.x records server activity with that same precision.</p>
 <p>Adviser uses the timestamp of activity, precise to the 100th of a second, to guarantee the uniqueness the activity it records and imports. It is therefore safe to import overlapping usage data from 5.x as the timestamp constraint prevents duplication.</p>
-<p>Usage Auditor 4.x collected activity from the Domino server with a timestamp granularity of whole seconds. Importing Usage Auditor 4.x data that overlaps in time range with imported Usage Auditor 5.x data will result in some usage being recorded multiple times.  </p>
+<p>Usage Auditor 4.x collected activity from the Domino server with a timestamp granularity of whole seconds. Importing Usage Auditor 4.x data that overlaps in time range with imported Usage Auditor 5.x data will result in some usage being recorded multiple times.</p>
                 
               
               
