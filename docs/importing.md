@@ -30,7 +30,7 @@ Usage Auditor contains a view, *Supporting Data*, that can be accessed from the 
 
 This view contains the raw files that Adviser will import. The view is categorized on the date on which the data was collected, and the attachment names listed in the view include the name of the server from which the data was collected.
 
-Adviser will import data for the date ranges available in this view.  To limit the amount of data imported to Adviser, make a copy of Usage Auditor and delete older entries as desired.
+Adviser will import data for the date ranges available in this view. To limit the amount of data imported to Adviser, make a copy of Usage Auditor and delete older entries as desired.
 
 Gaps in the dates of these files indicate that either *Save Supporting Data* was disabled during the time of the gap, or Usage collection failed to run (e.g. due to the Usage workstation being shut off.) In Usage Auditor 5.x, data is collected for all available activity on the server since the last successful scan; gaps smaller than 10 days should not represent missing data. In 4.x, data was collected nightly for the prior day only. If there are significant gaps (more than 10 days in 5.x), limiting the import to the data available after the gaps will improve accuracy, but shorten the reporting period.
 
@@ -57,4 +57,4 @@ Notes and Domino timestamps are stored with 100th of a second precision, and Usa
 
 Adviser uses the timestamp of activity, precise to the 100th of a second, to guarantee the uniqueness the activity it records and imports. It is therefore safe to import overlapping usage data from 5.x as the timestamp constraint prevents duplication.
 
-Usage Auditor 4.x collected activity from the Domino server with a timestamp granularity of whole seconds. Importing Usage Auditor 4.x data that overlaps in time range with imported Usage Auditor 5.x data will result in some usage being recorded multiple times.  
+Usage Auditor 4.x collected activity from the Domino server with a timestamp granularity of whole seconds. Importing Usage Auditor 4.x data that overlaps in time range with imported Usage Auditor 5.x data will result in some usage being recorded multiple times.

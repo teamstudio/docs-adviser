@@ -148,8 +148,8 @@ The ID must also have Editor level ACL access (with delete rights) to the Advise
 1. On the computer where the Adviser workstation will run, log in to the HCL Notes client with the ID that will be used to collect data.
 2. Ensure that the Notes client setting *Don't prompt for password from other Notes-based programs* is checked (*File > Security > User Security...*). This step is required to allow the Adviser Workstation application to run.
 3. Open the Adviser server application in the Notes client, and click on the link to enable workstation processing in the section titled Adviser Workstation.  
-   ![Workstation Install Settings](img/install_ws_settings.png)
 4. The Adviser Workstation installer program will launch.  Follow the prompts to install the program. During setup, a settings page will be shown which contains configuration information for the Adviser Workstation and its connection to the server. Verify the information is correct.
+   ![Workstation Install Settings](img/install_ws_settings.png)
 
 When the installation is complete, the installer will offer to launch the Adviser Workstation application.
 
@@ -160,7 +160,8 @@ Once installed, the Adviser Workstation can be launched by clicking the same lin
   ![Enable Workstation](img/install_ws_enable.png)
 </figure>
 
-The Adviser Workstation can also be launched by running the executable Workstation.exe, which is installed by default at &lt;Program Files (x86)&gt;\Teamstudio\Adviser Workstation\Workstation.exe
+The Adviser Workstation can also be launched by running the executable Workstation.exe, which is installed by default at &lt;Program Files (x86)&gt;\Teamstudio\Adviser Workstation\Workstation.exe.
+
 Once launched, the Adviser Workstation application window should open, and begin monitoring for pending scans.
 
 <figure markdown="1">
@@ -200,7 +201,7 @@ To upgrade from a previous version of Adviser 6.0 or greater, follow the steps b
 ### Upgrade Adviser Workstation 6.2  or later
 1. Exit the Adviser Workstation application, if running.
 2. Uninstall Adviser Workstation from the Windows *Add / Remove Programs* control panel.
-3. Install the new Adviser Workstation from the Configuration page in the Adviser server NSF, following the instructions above
+3. Install the new Adviser Workstation from the Configuration page in the Adviser server NSF, following the instructions above.
 
 ### Upgrade Adviser Workstation 6.1 or earlier
 The Adviser Workstation install prior to 6.2 ran the workstation component as a locally scheduled agent in the Notes client, from the Notes application *TSAdviserWS.nsf* located in the root of the Notes data directory. To upgrade, follow these steps.

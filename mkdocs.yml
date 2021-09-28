@@ -46,3 +46,8 @@ plugins:
       default_language: en
       languages:
         ja: 日本語
+      nav_translations:
+        ja:
+          Installation: Teamstudio Adviser のインストール
+          Using Teamstudio Adviser: Teamstudio Adviser の使い方
+          Settings: 設定
