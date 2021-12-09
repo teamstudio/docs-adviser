@@ -1,0 +1,1223 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.5">
+    
+    
+      
+        <title>Teamstudio Adviser のインストール - Teamstudio Adviser 6.7</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cdeb8541.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#teamstudio-adviser" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="Teamstudio Adviser 6.7" class="md-header__button md-logo" aria-label="Teamstudio Adviser 6.7" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Teamstudio Adviser 6.7
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Teamstudio Adviser のインストール
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="Select language">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="../../installing/" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="./" hreflang="ja" class="md-select__link">
+                    日本語
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="クリア" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Teamstudio Adviser 6.7" class="md-nav__button md-logo" aria-label="Teamstudio Adviser 6.7" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Teamstudio Adviser 6.7
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Teamstudio Adviser
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Teamstudio Adviser のインストール
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Teamstudio Adviser のインストール" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Teamstudio Adviser のインストール
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Teamstudio Adviser のインストール
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Teamstudio Adviser のインストール
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    既存のインストールをアップグレードする方法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hcl-domino" class="md-nav__link">
+    HCL Domino サーバーのシステム要件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    利用状況データ収集の前提要件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teamstudio-adviser_1" class="md-nav__link">
+    Teamstudio Adviser アプリケーションのインストールと設定
+  </a>
+  
+    <nav class="md-nav" aria-label="Teamstudio Adviser アプリケーションのインストールと設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teamstudio-adviser_2" class="md-nav__link">
+    Teamstudio Adviser アプリケーションテンプレートの入手
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teamstudio-adviser_3" class="md-nav__link">
+    Teamstudio Adviser アプリケーションの作成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    トランザクション・ロギング
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acl" class="md-nav__link">
+    アクセス制御リスト (ACL) の調整
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    日時のスキャンをスケジュールするには
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    設定
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adviser" class="md-nav__link">
+    ワークステーション上に Adviser データ収集アプリケーションをインストールする方法
+  </a>
+  
+    <nav class="md-nav" aria-label="ワークステーション上に Adviser データ収集アプリケーションをインストールする方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hcl-notes" class="md-nav__link">
+    HCL Notes クライアントワークステーションの前提条件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adviser_1" class="md-nav__link">
+    Adviser ワークスーテーションアプリケーションをインストールするには
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adviser_2" class="md-nav__link">
+    Adviser ワークステーションの起動
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    ワークステーション - サーバー間の接続
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adviser-" class="md-nav__link">
+    Adviser ワークステーション - コンソールコマンド
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adviser_3" class="md-nav__link">
+    Adviser のアップグレード方法
+  </a>
+  
+    <nav class="md-nav" aria-label="Adviser のアップグレード方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adviser_4" class="md-nav__link">
+    Adviser サーバーのアップグレード
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adviser-workstation-61" class="md-nav__link">
+    Adviser Workstation 6.1 以前からのアップグレード
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adviser-61" class="md-nav__link">
+    Adviser ワークステーション 6.1 以前からのアップグレード
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    ブラウザとパスワード保存に関して
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-auditor" class="md-nav__link">
+    Usage Auditor からの利用状況データをインポートするには
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing/" class="md-nav__link">
+        Teamstudio Usage Auditor から利用状況データをインポートするには
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Teamstudio Adviser の使い方
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Teamstudio Adviser の使い方" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Teamstudio Adviser の使い方
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        Teamstudio Adviser の使い方
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../catalog/" class="md-nav__link">
+        カタログ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        利用状況
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../complexity/" class="md-nav__link">
+        複雑さ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guidance/" class="md-nav__link">
+        ガイダンス
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jobs/" class="md-nav__link">
+        ジョブ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filters/" class="md-nav__link">
+        フィルター機能
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/" class="md-nav__link">
+        タグ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exporting/" class="md-nav__link">
+        データ出力
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          設定
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="設定" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          設定
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings_servers/" class="md-nav__link">
+        サーバー
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings_filters/" class="md-nav__link">
+        フィルター設定
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings_scans/" class="md-nav__link">
+        スキャン
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings_complexity/" class="md-nav__link">
+        複雑さの設定
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../release/" class="md-nav__link">
+        リリースノート
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    既存のインストールをアップグレードする方法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hcl-domino" class="md-nav__link">
+    HCL Domino サーバーのシステム要件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    利用状況データ収集の前提要件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teamstudio-adviser_1" class="md-nav__link">
+    Teamstudio Adviser アプリケーションのインストールと設定
+  </a>
+  
+    <nav class="md-nav" aria-label="Teamstudio Adviser アプリケーションのインストールと設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teamstudio-adviser_2" class="md-nav__link">
+    Teamstudio Adviser アプリケーションテンプレートの入手
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teamstudio-adviser_3" class="md-nav__link">
+    Teamstudio Adviser アプリケーションの作成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    トランザクション・ロギング
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acl" class="md-nav__link">
+    アクセス制御リスト (ACL) の調整
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    日時のスキャンをスケジュールするには
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    設定
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adviser" class="md-nav__link">
+    ワークステーション上に Adviser データ収集アプリケーションをインストールする方法
+  </a>
+  
+    <nav class="md-nav" aria-label="ワークステーション上に Adviser データ収集アプリケーションをインストールする方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hcl-notes" class="md-nav__link">
+    HCL Notes クライアントワークステーションの前提条件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adviser_1" class="md-nav__link">
+    Adviser ワークスーテーションアプリケーションをインストールするには
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adviser_2" class="md-nav__link">
+    Adviser ワークステーションの起動
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    ワークステーション - サーバー間の接続
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adviser-" class="md-nav__link">
+    Adviser ワークステーション - コンソールコマンド
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adviser_3" class="md-nav__link">
+    Adviser のアップグレード方法
+  </a>
+  
+    <nav class="md-nav" aria-label="Adviser のアップグレード方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adviser_4" class="md-nav__link">
+    Adviser サーバーのアップグレード
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adviser-workstation-61" class="md-nav__link">
+    Adviser Workstation 6.1 以前からのアップグレード
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adviser-61" class="md-nav__link">
+    Adviser ワークステーション 6.1 以前からのアップグレード
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    ブラウザとパスワード保存に関して
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-auditor" class="md-nav__link">
+    Usage Auditor からの利用状況データをインポートするには
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="teamstudio-adviser">Teamstudio Adviser のインストール</h1>
+<p>Teamstudio Adviser はふたつの HCL Domino アプリケーションから構成されており、ひとつは Domino サーバー上に配置する HCL Domino アプリケーションで、もうひとつは HCL Notes クライアントがインストールされたワークステーション上で実行されるプログラムです。</p>
+<p>Adviser サーバーのアプリケーションは、Adviser のブラウザ・ベースのユーザーインターフェースを提供し、Adviser モジュールに対するデータベースとユーザーの様々なレポートを生成し、Adviser によって収集したすべてのデータを格納します。Adviser サーバーは、テンプレート TSAdviser.ntf を基にして HTTP タスクの起動しているサーバー上に NSF を作成し配置します。そして設定は Web ブラウザを介して行います。</p>
+<p>Adviser ワークステーションは、Adviser サーバーによって生成されたレポートの基礎になるデータを収集する役割を担っています。Adviser ワークステーションは HCL Notes のインストールされたワークステーション上に、インストーラー(サーバー NSF の中に格納されています)を起動することで配置されます。このインストールされたプログラムは、Adviser サーバーに接続するようにインストーラーによって構成され、必要に応じて Adviser のスキャンプロセスを起動し続けます。スキャンはリソースを著しく消費するプロセスですが、異なるワークステーションから実行して、サーバーパフォーマンスの Adviser からのインパクトを抑制し、複数ドメインのアクセスを容易にする利点があります。</p>
+<h2 id="_1">既存のインストールをアップグレードする方法</h2>
+<p>Adviser 6.0 以降の既存のインストールからアップグレードする場合には<a href="#upgrading">アップグレード方法</a>セクションを参照してください。そうでない場合は、下の方法に従ってください。</p>
+<h2 id="hcl-domino">HCL Domino サーバーのシステム要件</h2>
+<p>Teamstudio Adviser の Web ユーザーインターフェースは、Domino サーバーのバージョン 8.5.3 以降の HTTP タスクが稼働している環境で運用します。</p>
+<ul>
+<li>Domino 8.5.3 では、少なくとも Fix Pack 3 と Upgrade Pack 1 (または XPages Extension Library) がインストールされていなければなりません。</li>
+<li>上記に必要なコンポーネントは Domino 9.0 以降に含まれているので、追加のコンポーネントは必要ありません。</li>
+</ul>
+<p>Teamstudio Adviser ワークステーションは HCL がサポートする Microsoft Windows 上の Notes 8.5.3 以降の 32 ビットをサポートしています。HCL Notes ワークステーションにには最新の Fix Pack が適用されていることを推奨します。</p>
+<h2 id="_2">利用状況データ収集の前提要件</h2>
+<p>Teamstudio Adviser の利用状況モジュールは HCL Domino サーバーの Activity Logging のタスクで収集したデータを元に、その集積とレポートを行います。</p>
+<p>利用状況の収集には、対象となるそれぞれのサーバーすべてに Activity Logging が必ず有効化されている必要があります。</p>
+<p>BM Domino サーバーの Activity Logging を有効にする説明を以下に示します。</p>
+<ol>
+<li>Teamstudio Adviser でスキャンする対象のサーバーにある Domino Dディレクトリーを開きます</li>
+<li>次に「設定」ビュー → サーバー → サーバー設定を選びます</li>
+<li>スキャン対象の HCL Domino サーバーの文書がすでにある場合には、その文書を編集モードににします。ない場合には、スキャン対象の HCL Domino サーバーのサーバー文書を新規作成します</li>
+<li>これが新規のサーバー文書の場合、Teamstudio Adviser でスキャンする HCL Domino サーバーを指定します<ul>
+<li>複数の HCL Domino サーバーをスキャンしようとする場合には、それぞれに用意する必要があります</li>
+</ul>
+</li>
+<li>Activity Logging タブに切り替え、Activity Logging を有効にします</li>
+<li>「有効なログタイプ」でが次のオプションを指定してください:<ul>
+<li>Domino.AGENT</li>
+<li>Domino.HTTP</li>
+<li>Domino.Notes.Database</li>
+<li>Domino.Notes.Session</li>
+</ul>
+</li>
+<li>サーバー文書を保存して閉じます</li>
+</ol>
+<p>これで HCL Domino サーバーの Activity Logging が有効になります。複数の HCL Domino サーバーに対して作業した場合には、Domino ディレクトリーが他のサーバーに複製されているのを確認してください。</p>
+<figure>
+<p><img alt="Install Configuration" src="../../img/install_config.png" /></p>
+</figure>
+<p>デフォルトでは、アクティビティはサーバー上の Log.nsf に記録され、ある一定期間 Log.nsf にアクティビティを保持するようになっています。Teamstudio Adviser は毎晩利用状況データを収集し、常に新しいデータのみをインポートします。ある夜の収集が失敗したとしても、データの保持期間内であれば利用状況データが失われることはありません。</p>
+<h2 id="teamstudio-adviser_1">Teamstudio Adviser アプリケーションのインストールと設定</h2>
+<h3 id="teamstudio-adviser_2">Teamstudio Adviser アプリケーションテンプレートの入手</h3>
+<p>Teamstudio Adviser アプリケーションは 2 つのパーツから構成されています:</p>
+<ol>
+<li>Teamstudio Adviser ドミノアプリケーションファイル (.NSF)</li>
+<li>Teamstudio Adviser ワークステーションクライアント (コマンドライン・インターフェース)</li>
+</ol>
+<p>これらの両方は、HCL Domino テンプレートファイルの中に含まれて提供されており、次の URL にある Teamstudio の Web サイトからダウンロードできます: <a href="https://jp.teamstudio.com/adviser-download-page">https://jp.teamstudio.com/adviser-download-page</a>.</p>
+<h3 id="teamstudio-adviser_3">Teamstudio Adviser アプリケーションの作成</h3>
+<p>Teamstudio Adviser アプリケーションテンプレートを入手したら、Teamstudio Adviser アプリケーションを作成します。データはここに格納されます。</p>
+<p>以下のステップで行うべきプロセスを簡単に示します:</p>
+<ol>
+<li>テンプレートファイルを HCL Notes クライアントのデータディレクトリーに移動します</li>
+<li>HCL Notes クライアントから、「ファイル」→ 「アプリケーション」→ 「新規作成」を選択します</li>
+<li>表示されるダイアログで以下の情報を入力します:<ul>
+<li><strong>サーバー</strong> Adviser アプリケーションを配置するサーバーを指定します</li>
+<li><strong>タイトル</strong> 任意ですが通常「Teamstudio Adviser」</li>
+<li><strong>ファイル名</strong> 通常、「TSAdviser.nsf」です。ファイル名にサブディレクトリーを指定することも可能です(例 “Teamstudio\TSAdviser.nsf”)</li>
+<li><strong>テンプレート</strong> リストから“Teamstudio Adviser” テンプレートを指定します</li>
+</ul>
+</li>
+</ol>
+<p>上記の内容を入力したら「OK」ボタンを押しアプリケーションを作成します。</p>
+<p>アプリケーションが作成されると、HCL Notes クライアント上で自動的に開きます。その際、認証の警告が表示されます。これは Teamstudio Adviser アプリケーションの設計が Teamstudio の ID で署名されているからです。ご自身の組織の Notes 署名 ID で再度署名するには次のステップに従ってください:</p>
+<ol>
+<li>HCL Domino Administrator アプリケーションを起動します</li>
+<li>Teamstudio Adviser アプリケーションを作成した HCL Domino サーバーに切り替えます</li>
+<li>「ファイル」タブから Teamstudio Adviser アプリケーションを指定します</li>
+<li>Teamstudio Adviser アプリケーションをハイライトし右クリックし、「署名...」を選択します</li>
+<li>表示されるダイアログで、サーバー上でアプリケーションが動作させるのに必要な署名者の Notes ID を指定するか、HCL Domino サーバーのサーバー ID を指定します</li>
+<li>「OK」をクリックし署名を完了させます</li>
+</ol>
+<p>HCL Domino サーバー上の設計の署名におよそ 1- 5 分程度かかります。</p>
+<p>インストールが正常に行われアプリケーションを開くと、下のイメージに似たスクリーンが表示されます:</p>
+<figure>
+<p><img alt="Install Home" src="../img/install_home.png" /></p>
+</figure>
+<h3 id="_3">トランザクション・ロギング</h3>
+<p>Adviser サーバー NSF が配置されているサーバー上で Domino のトランザクション・ロギングが有効になっている場合、Adviser データベースに対しては無効にするため、データベースプロパティの詳細タブにある「トランザクション・ロギングを無効化」にチェックを入れてください。Adviser に対してはスキャンがエラーなどがないか安全に繰り返しが行われるようにトランザクション・ロギングは必要ありません。トランザクション・ロギングを有効にすると Adviser が行う大量の更新でトランザクション・ログが制限値に到達しサーバー上で問題を引き起こす可能性があります。</p>
+<h3 id="acl">アクセス制御リスト (ACL) の調整</h3>
+<p>デフォルトでは、Teamstudio Adviser サーバーは「アクセスなし」で「パブリック文書[読者]」の権限のある「Anonymous」のACLエントリが必要です。この設定は Adviser ワークステーションがクライアント側でのジョブが完了したとき、サーバー側でのジョブを起動するのに必要です。Anonymous のアクセスはジョブを作成したりデータにアクセスするために使用できません。Webブラウザアプリケーションをサポートする Adviser のサービスで必要な権限として、Anonymous をそれ以上の高い権限に設定しないでください。Anonymous に高い権限を与えることは、サーバーが権限を必要とするのを妨げてしまうことになります。</p>
+<p>サーバーへの Anonymous アクセスを許可していない環境である場合（例えば、サーバー文書でサーバーレベルで許可していない）にはAdviser に HTTP ユーザー名/パスワードを格納しておき、こういったアクセスを可能にすることができます。詳細の情報は、 Teamstudio の技術サポート techsupport@teamstudio.com までご連絡ください。</p>
+<p>通常、Adviser に設定するその他の ACL 設定は、普通のノーツアプリケーションに適用するのと同じ方法でブラウザアプリケーションにも適用できます。</p>
+<p>「-Default-」アクセスは匿名のアクセスとして、必要となるどのレベルのアクセスにもアサインできます。</p>
+<h3 id="_4">日時のスキャンをスケジュールするには</h3>
+<p>一般的に 7- 10 日間のデータを保持し以降破棄されるサーバー上の log.nsf から Adviser はアクティビテイィのデータを収集しますので、データが欠損なく収集されることを保証するため利用状況のスキャンは常に一定間隔で起動しておく必要があります。</p>
+<p>スキャンを夜中に必ず行うようにするため、Teamstudio Adviser アプリケーションには有効にしておく必要のあるスケジュールエージェントがあります。この作業には、HCL Domino Designer がインストールされており、Teamstudio Adviser アプリケーションに設計権限以上があることと、サーバー上でエージェントを動作させることができる Notes ID が必要です。このスケジュールエージェントを有効にするには次のステップに従ってください:</p>
+<ol>
+<li>HCL Notes ワークステーションに Teamstudio Adviser アプリケーションをハイライトします</li>
+<li>Teamstudio Adviser ワークステーションを右クリックし、メニューから「アプリケーション」→ 「エージェントへ移動」を選択します。</li>
+<li>エージェントのリストから“Scheduled Nightly Scan”を選択します</li>
+<li>エージェントリスト上部の「有効化」ボタンをクリックエージェントを実行するサーバーを指定します</li>
+</ol>
+<p>HCL Domino Designer を閉じます。</p>
+<p>このエージェントはデフォルトでは夜中の午前 1 時に毎日起動します。実行開始時刻は必要に応じて変更していただけます。</p>
+<p>この <em>Schedule Nightly Scan</em> エージェントは、アプリケーションにある 今すぐスキャン ボタンで行われるマニュアルのスキャンと同じプロセスが実行されます。このスキャンで、カタログ情報の更新、前回のスキャンからの差分となる利用状況、関連情報の再計算などを行います。ワークステーションの処理はこのスキャンのリクエストを処理するために必ず有効になっていなければなりません。</p>
+<h3 id="_5">設定</h3>
+<p>Teamstudio Adviser サーバーでの設定の最後のステップは、スキャン対象のサーバーを指定することです。Web アプリケーションの Settings (設定) ページで行えます。設定ページは Adviser ナビゲーションバーの右側にある歯車アイコンからアクセスできます。詳しくは<a href="../settings_servers/">サーバー</a>を参照してください。</p>
+<h2 id="adviser">ワークステーション上に Adviser データ収集アプリケーションをインストールする方法</h2>
+<h3 id="hcl-notes">HCL Notes クライアントワークステーションの前提条件</h3>
+<p>Teamstudio Adviser アプリケーションが HCL Domino サーバーからデータを収集させるには、HCL Notes クライアントがインストールされたコンピューター上に、収集アプリケーションをインストールする必要があります。このコンピューターには次の HCL Notes クライアントの構成が必要です:</p>
+<ol>
+<li>最新の Fix Pack が適用されたバージョン 8.5.3、あるいは、少なくとも Fix Pack 6 以降が適用されたバージョン 9.0.1</li>
+<li>スキャン対象のそれぞれの HCL Domino サーバーと Teamstudio Adviser を配置したサーバーに対してフルアドミニストレーションの権限のある Notes ID でクライアントがセットアップされていること</li>
+<li>セキュリティオプション「他の HCL Notes ベースのプログラムでパスワードプロンプトを表示しない」が有効になっていること<ul>
+<li>この設定は HCL Notes のメニュー「ファイル」→ 「セキュリテイ」 → 「ユーザーセキュリティ」で行えます。</li>
+</ul>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Teamstudio Adviser ワークステーションの複雑さが、クライアントのスキャンタスクを実行するため、物理的及び仮想のコンピューターに関わらず、専用のコンピューターを使用することを強く推奨します。このコンピューターは、一日 24 時間再起動やログアウトされることのないようにしなければなりません。</p>
+</div>
+<p>Adviser ワークステーションは、クライアントワークステーションからスキャンを実行できる実行可能なアプリケーションです。アクティビティをスキャンしレポートすることは、複数のサーバーにアクセスし、コンピュータープロセスの一部として動作する非常にリソースを消費するアものになります。</p>
+<p>こうしてスキャンした利用状況アクティビティデータは、順次サーバーアプリケーションへ書き込みされ、Web ブラウザインターフェースを経由して利用できます。</p>
+<p>Adviser ワークステーションはローカルの定期エージェントが動作する環境が必要で、保留されたジョブに対するサーバーアプリケーションの監視や、データ収集を動作させるの必要となります。 </p>
+<p>アプリケーションはスキャン対象となるそれぞれのサーバーの Log.nsf ファイルに少なくとも読者権限のアクセスをもつ ID でインストールまたは動作させなければなりません。複雑さデータ収集が必要であれば、それぞれのアプリケーションに対しても同様のアクセス権がなければなりません。サーバー群が複数ドメイン内に存在している場合には、すべてのサーバーに対して相互認証されている ID とワークステーションが必要となります。</p>
+<p>またこの ID は Adviser サーバーアプリケーションに対して、編集者(削除権限付き)の ACL アクセスを設定しなければなりません。</p>
+<h3 id="adviser_1">Adviser ワークスーテーションアプリケーションをインストールするには</h3>
+<ol>
+<li>Adviser ワークステーションが動作するワークステーション上で、データ収集に使用される ID で HCL Notes クライアントにログインします。</li>
+<li>Notes クライアントのセキュリティ設定で「他の HCL Notes ベースのプログラムでパスワードプロンプトを表示しない（セキュリティが低下）」にチェックしてください（ファイル &gt; セキュリティ &gt; ユーザーセキュリティ）。これは実行モジュールを動作させるのに必要となります。</li>
+<li>Notes クライアントで Adviser サーバーアプリケーションを開き、「Adviser ワークステーション」とタイトルのあるセクションのワークステーションを有効にするリンクをクリックします。 </li>
+<li>Adviser インストールプログラムが起動します。プロンプトに従って処理を進めます。セットアップの途中、ワークステーションに対する設定情報を指定する設定ページが表示されます。サーバーに正しく接続するため以下の情報を確認して指定してください。:
+   <img alt="Workstation Install Settings" src="../img/install_ws_settings.png" /></li>
+</ol>
+<p>インストールが完了すると、ワークステーションが起動するようになっています。</p>
+<h3 id="adviser_2">Adviser ワークステーションの起動</h3>
+<p>インストールが完了している状態であれば、Adviser ワークステーションをインストールの際に使用した同じリンクをクリックして起動させることができます。Notes クライアントで Adviser サーバー NSF を開き、設定ページにある Adviser ワークステーションというタイトルのセクションのリンクから起動してください。:</p>
+<figure>
+<p><img alt="Enable Workstation" src="../img/install_ws_enable.png" /></p>
+</figure>
+<p>Adviser ワークステーションは同様に、Workstation.exe という実行ファイルを起動することでT動作します。デフォルトでは &lt;Program Files (x86)&gt;\Teamstudio\Adviser Workstation\Workstation.exe になります。</p>
+<p>起動すると、ワークステーションのウィンドウが開き、保留になっているスキャンの監視を開始します:</p>
+<figure>
+<p><img alt="Workstaion Window" src="../../img/install_ws_window.png" /></p>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Adviser ワークステーションのアプリケーションは、スキャンのプロセスを完了させるのに、常に動作し続けている必要があります。起動は毎日午前 1 時（サーバー時刻）に行われます。
+スキャンする HCL Domino サーバーに対する利用状況の正確な内容を掴むためには、少なくとも 30 日は継続していただくことをお勧めします。</p>
+</div>
+<h3 id="-">ワークステーション - サーバー間の接続</h3>
+<p>Adviser ワークステーションは HTTP を経由して Adviser サーバーに接続する必要があります。</p>
+<p>サーバーやデータベースをスキャンし Adviser サーバーにデータを書き込むほとんどのワークステーション側の処理は、Notes クライアントと NRPC を通じて行われます。</p>
+<p>クライアント側のジョブが完了した際、サーバー側の処理を起動させるために、Adviser は HTTP 経由で REST サービスのエンドポイントを呼び出し、更新したデータを処理するサーバーアプリケーションを起動します。</p>
+<p>デフォルトのワークステーション設置では、サーバーのアドレス帳に定義されている最初のホスト名でサーバーに接続しようと試みます。その接続はポート 80 番の SSL なしで行われます。</p>
+<p>それぞれのサーバーに対して SSL 接続が必要な場合や、他のポート番号を使用して接続したい場合には、ワークステーションデータベースの「Workstation Configuration」文書にある HTTP Host Name フィールドを編集し変更できます。デフォルトでは、このフィールドはホスト名だけが入っています。プロトコルやポート名を次のように指定することもできます(例、https://teamstudio.com:499 ポート番号 499 上の SSL接続)。Adviserワークステーションとして振る舞う Notes クライアントを完全に終了させ、この設定を有効にするため再起動が必要です。この設定に関して、ヘルプが必要な場合は、チームスタジオのサポートへご連絡ください。</p>
+<p>Notes に実装されている Java 6 JVM の制限により、大きなキーサイズの SSL は正常に動作しない可能性があります。</p>
+<p>Adviser をホストするサーバーで Anonymous の接続が許可されていない場合には、ワークステーションは HTTP のユーザー認証を使用するように構成できます。ログインに使用するユーザー名とパスワードは通常のアクセスを防ぐためハッシュされ、ワークステーション上のあるローカルデータベースに格納されます。格納には Notes の暗号フィールドに現在の ID で暗号化しフィールド内に格納されます。このような認証を有効にするには「http auth」コマンドをワークステーションのコンソールに入力します。（「help http auth」を入力するとコマンドの使用方法が表示されます）。</p>
+<h3 id="adviser-">Adviser ワークステーション - コンソールコマンド</h3>
+<p>Adviser のワークステーションではコンソールから限定した数の管理コマンドを使用することができます。利用できるコマンドのリストを表示するには、コンソールで「help」とタイプしてください。あるコマンドの追加の使用方法に関する情報を表示するには「help &lt;command&gt;」とタイプすると表示されます。</p>
+<h2 id="adviser_3">Adviser のアップグレード方法</h2>
+<p>Adviser 6.0 以降のバーションからアップグレードするには次のステップに従ってください。 </p>
+<h3 id="adviser_4">Adviser サーバーのアップグレード</h3>
+<ol>
+<li>ターゲットサーバー上でコードを実行するのに必要な適切な ID で新しく入手したテンプレートに署名します（通常、管理者ID）</li>
+<li>この新しいテンプレートでサーバーにある Adviser のデータベースの設計を更新します。</li>
+<li>「restart task http」コマンドを使って HTTP タスクを再起動します。(これは"quit http"してから続けて"load http"するのと同じです。"tell http restart" では、完全に JVM をリリースして新しいコードを発行することができませんので、使用しないでください)。</li>
+</ol>
+<h3 id="adviser-workstation-61">Adviser Workstation 6.1 以前からのアップグレード</h3>
+<ol>
+<li>Adviser ワークステーションのアプリケーションが起動していた場合には終了させます</li>
+<li>Windows のコントロールパネルより「プログラムの追加／削除」で Adviser ワークステーションをアンインストールします</li>
+<li>Adviser のサーバーNSFから Adviser ワークステーションをガイドに従ってインストールします。</li>
+</ol>
+<h3 id="adviser-61">Adviser ワークステーション 6.1 以前からのアップグレード</h3>
+<p>6.2 より前の Adviser ワークステーションのインストールは、Notes クライアント内のローカル定期エージェントとしてワークステーション・コンポーネントを起動していました。これは、Notes の "data" ディレクトリーに配置される <em>TSAdviserWS.nsf</em> というアプリケーションでした。アップグレードには次の手順に従ってください:</p>
+<ol>
+<li>ワークステーションとして動作していた Notes クライアントを完全に終了させてください(タスクマネージャーで完全に終了しているか確認してください)。</li>
+<li>クライアントのデータディレクトリーから <em>TSAdviserWs.nsf</em> を削除してください。</li>
+<li>Notes クライントを再起動し、Adviser サーバーアプリケーションを開きます。</li>
+<li>前出の Adviser ワークステーションのインストールの説明に従って、ワークステーションをインストールします。</li>
+<li>ブラウザ UI 内で新しいスキャンをスケジュールしてください。これで、新しいバージョンに必要なデータがアップデートされ、新しい機能が有効になります。ワークステーションを再起動する間に、新しいスキャンをスケジュールのが安全です。ワークステーションがアクティブになればスキャンは自動的に開始されます。</li>
+</ol>
+<p>お客様が Adviser ワークステーションのベータバージョン6.2、つまりコマンドライン・アプリケーションをご使用になっている場合には、そのアプリケーションを終了し、前出の説明にある新しいワークステーション・アプリケーションをインストールしてください (新しいバージョンをインストールするには提供されているバージョンにもよりますが、 Windows のコントロールパネスの「プログラムと機能」で Adviser ワークステーションでアンインストールを施される場合もあります)。</p>
+<h3 id="_6">ブラウザとパスワード保存に関して</h3>
+<p>Adviser はブラウザ内の「パスワード保存」を使用した運用を現在サポートしていません。以前に保存したパスワードはブラウザの設定ページから削除してください。</p>
+<h3 id="usage-auditor">Usage Auditor からの利用状況データをインポートするには</h3>
+<p>利用状況データを収集している期間中、設定 Save Supporting Data 設定が有効になっていれば、Teamstudio Usage Auditor からデータをインポートできます。 <a href="../importing/">詳細は Importing from Usage Auditor を参照してください。</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="フッター">
+      
+        
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="前: Teamstudio Adviser" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                前
+              </span>
+              Teamstudio Adviser
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../importing/" class="md-footer__link md-footer__link--next" aria-label="次: Teamstudio Usage Auditor から利用状況データをインポートするには" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                次
+              </span>
+              Teamstudio Usage Auditor から利用状況データをインポートするには
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e84347e.min.js"></script>
+      
+    
+  </body>
+</html>

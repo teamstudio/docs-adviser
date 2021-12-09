@@ -1,0 +1,808 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.5">
+    
+    
+      
+        <title>Teamstudio Usage Auditor から利用状況データをインポートするには - Teamstudio Adviser 6.7</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cdeb8541.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#teamstudio-usage-auditor" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="Teamstudio Adviser 6.7" class="md-header__button md-logo" aria-label="Teamstudio Adviser 6.7" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Teamstudio Adviser 6.7
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Teamstudio Usage Auditor から利用状況データをインポートするには
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="Select language">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="../../importing/" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="./" hreflang="ja" class="md-select__link">
+                    日本語
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="クリア" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Teamstudio Adviser 6.7" class="md-nav__button md-logo" aria-label="Teamstudio Adviser 6.7" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Teamstudio Adviser 6.7
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Teamstudio Adviser
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Teamstudio Adviser のインストール
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Teamstudio Adviser のインストール" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Teamstudio Adviser のインストール
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing/" class="md-nav__link">
+        Teamstudio Adviser のインストール
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Teamstudio Usage Auditor から利用状況データをインポートするには
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Teamstudio Usage Auditor から利用状況データをインポートするには
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    必要要件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    保存したサポートデータの検証
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    サーバーのスキップ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-auditor" class="md-nav__link">
+    Usage Auditor のデータインポートの操作
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-auditor-4x-and-5x" class="md-nav__link">
+    Usage Auditor 4.x and 5.x の両方の利用状況データをインポートする際に
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Teamstudio Adviser の使い方
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Teamstudio Adviser の使い方" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Teamstudio Adviser の使い方
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        Teamstudio Adviser の使い方
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../catalog/" class="md-nav__link">
+        カタログ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        利用状況
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../complexity/" class="md-nav__link">
+        複雑さ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guidance/" class="md-nav__link">
+        ガイダンス
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jobs/" class="md-nav__link">
+        ジョブ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filters/" class="md-nav__link">
+        フィルター機能
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/" class="md-nav__link">
+        タグ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exporting/" class="md-nav__link">
+        データ出力
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          設定
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="設定" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          設定
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings_servers/" class="md-nav__link">
+        サーバー
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings_filters/" class="md-nav__link">
+        フィルター設定
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings_scans/" class="md-nav__link">
+        スキャン
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings_complexity/" class="md-nav__link">
+        複雑さの設定
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../release/" class="md-nav__link">
+        リリースノート
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    必要要件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    保存したサポートデータの検証
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    サーバーのスキップ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-auditor" class="md-nav__link">
+    Usage Auditor のデータインポートの操作
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-auditor-4x-and-5x" class="md-nav__link">
+    Usage Auditor 4.x and 5.x の両方の利用状況データをインポートする際に
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="teamstudio-usage-auditor">Teamstudio Usage Auditor から利用状況データをインポートするには</h1>
+<p>Teamstudio Usage Auditor の最新バージョンから Teamstudio Adviser へアップグレードされるお客様は、Usage Auditor でこれまで収集してきたデータを Adviser にインポートできます。</p>
+<p>利用状況データは Usage Auditor アプリケーションのサーバー設定でデータ収集期間 "Save Supporting Data" への設定がされている場合にインポートできます。Adviser は詳細フィルタリングオプションを有効にするこのサポートデータファイルの完全な詳細データに基づいています。より詳細な情報は以降の必要要件を参照してください。</p>
+<h2 id="_1">必要要件</h2>
+<p>Adviser は Usage Auditor の利用状況レポート作成スキャン実行中に収集したソースファイルを使用して、Usage Auditor の以前のバージョンから利用状況データをインポートします。</p>
+<p>Usage Auditor はこのソースファイルを、対象サーバーのサーバー設定で <em>Save Supporting Data</em> が設定されている場合に保存されるようになっています。この設定は、Usage Auditor データベースのサーバー文書にあり、<em>Admin &gt; Server Configuration</em> で確認できます。</p>
+<p>さらに利用状況データのインポートには、次にあげる条件が整っていなければなりません。</p>
+<ul>
+<li>Usage Auditor がスキャン中に <em>Save Supporting Data</em> の設定がされていたこと。</li>
+<li>Usage Auditor データベースのコピーが、Adviser ワークステーション (Notes クライアントで Adviser が必要なジョブを処理できるように構成されているワークステーション）上にあること。</li>
+<li>Usage Auditor で定義したサーバーのすべてが同様に Adviser でも定義されていること。
+*Adviser の直近のスキャンが有効に分類されているすべてのサーバーで成功していること。</li>
+</ul>
+<p>Adviser は Usage Auditor 4 と 5 のフォーマットを持つファイルインポートをサポートします。</p>
+<h2 id="_2">保存したサポートデータの検証</h2>
+<p>Usage Auditor には <em>Supporting Data</em> のビューがあり、<em>表示 &gt; 移動</em> メニューで確認できます。</p>
+<figure>
+<p><img alt="Support Data View" src="../../img/import_supporting_data.png" /></p>
+</figure>
+<p>このビューで、Adviser がインポートする生データを確認できます。収集した日付別に分類されています。ビュー内の添付ファイルの名前が一覧表示され、その中にはデータを収集したサーバーの名前も含まれています。</p>
+<p>Adviser はこのビューの日付の範囲にあるデータをインポートします。Adviser に必要のない古いデータのインポートを制限したい場合には、必要に応じて Usage Auditor データベースのバックアップコピーを取ったうえで、データを削除してください。</p>
+<p>これらのファイルの期間に空白がある場合、<em>Save Supporting Data</em> が無効になっていたか、利用状況の収集の実行が失敗（たとえば、ワークステーションがシャットダウンしていたなど）が考えられます。Usage Auditor 5.x では最後にスキャンしてからのサーバー上のアクティビティをすべて収集するので、データは 10 日の間隔よりも少なければデータが失われることはありませんが、4.x では夜間に前日のデータだけを収集していたので失われている可能性が高いと言えます。もし、著しい空白期間がある(5.x では 10 日以上)は、この空白期間によってインポートするデータの正確性に支障をきたす可能性がありますが、レポート期間を短くするなど考慮してください。</p>
+<h2 id="_3">サーバーのスキップ</h2>
+<p>データのインポートではすべてのサーバーが定義されている必要があり、インポートの前に Adviser でそのサーバーに対するスキャンが成功していなければなりません。</p>
+<p>Usage Auditor からインポートするデータの中に、もう現在存在していないサーバーのデータがある場合、あるいは、インポートしたくない場合には Adviser でそのサーバーの定義を作成したうえで、無効に設定してください。</p>
+<h2 id="usage-auditor">Usage Auditor のデータインポートの操作</h2>
+<p>Adviser に Usage Auditor のデータをインポートは以下の手順に従ってください。</p>
+<ol>
+<li>Usage Auditor データベースを Adviser ワークステーションクライントにコピーします。</li>
+<li>Usage Auditor 内の <em>Supporting Data</em> ビューをレビューします。 (前出).</li>
+<li>必要に応じて Usage Auditor に合致するようサーバー定義を Adviser に追加作成します。(インポートしないサーバーには、逆に無効にします)</li>
+<li>Adviser のスキャンを実行し(Adviser のブラウザ UI の <em>Settings  &gt; Server</em> ページ)、スキャンが成功するか検証してください。</li>
+<li>Adviser ワークステーションの Notes クライアントから Adviser サーバーアプリケーションを開き、アクション &gt; <em>Upgrade / Reimport Usage</em> で Usage Auditor データベースを指定しインポートを開始します。</li>
+</ol>
+<p>このインポート操作はひとつの Adviser ジョブとして実行します( UI でスキャンが実行されるのと同様)ので、ブラウザーアプリを再ロードして進捗を管理することができます。</p>
+<h2 id="usage-auditor-4x-and-5x">Usage Auditor 4.x and 5.x の両方の利用状況データをインポートする際に</h2>
+<p>Notes/Domino のタイムスタンプは 100 分の 1 秒の精度で保存され、Usage Auditor 5.x では、それと同じ精度でサーバーアクティビティを記録します。</p>
+<p>つまり、Adviser も 100 分の 1 秒のアクティビティのタイムスタンプを使用しているので、アクティビティを記録したりインポートする際に、データがユニークになることを保証しています。それゆえ、5.x から重複する利用状況データをインポートしたとしても、このタイムスタンプをもとに重複を防ぐことができ安全と言えます。</p>
+<p>Usage Auditor 4.x は Domino サーバーから 1 秒単位のタイムスタンプの精度でアクティビティを収集します。Usage Auditor 4.x のデータをインポートするとインポートした Usage Auditor 5.x のデータとある時間範囲でオーバーラップし、利用状況が重複した回数で記録されますのでご注意ください。</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="フッター">
+      
+        
+        <a href="../installing/" class="md-footer__link md-footer__link--prev" aria-label="前: Teamstudio Adviser のインストール" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                前
+              </span>
+              Teamstudio Adviser のインストール
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../overview/" class="md-footer__link md-footer__link--next" aria-label="次: Teamstudio Adviser の使い方" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                次
+              </span>
+              Teamstudio Adviser の使い方
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e84347e.min.js"></script>
+      
+    
+  </body>
+</html>

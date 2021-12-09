@@ -1,0 +1,1222 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.5">
+    
+    
+      
+        <title>Installing Teamstudio Adviser - Teamstudio Adviser 6.7</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.cdeb8541.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#installing-teamstudio-adviser" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Teamstudio Adviser 6.7" class="md-header__button md-logo" aria-label="Teamstudio Adviser 6.7" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Teamstudio Adviser 6.7
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Installing Teamstudio Adviser
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="Select language">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="./" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="../ja/installing/" hreflang="ja" class="md-select__link">
+                    日本語
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Teamstudio Adviser 6.7" class="md-nav__button md-logo" aria-label="Teamstudio Adviser 6.7" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Teamstudio Adviser 6.7
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Documentation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Installation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Installation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Installation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Installing Teamstudio Adviser
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Installing Teamstudio Adviser
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#upgrading-an-existing-installation" class="md-nav__link">
+    Upgrading an Existing Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hcl-domino-server-system-requirements" class="md-nav__link">
+    HCL Domino Server System Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites-for-usage-data-collection" class="md-nav__link">
+    Prerequisites for Usage Data Collection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-and-configuring-teamstudio-adviser-application" class="md-nav__link">
+    Installing and Configuring Teamstudio Adviser Application
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing and Configuring Teamstudio Adviser Application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acquiring-the-teamstudio-adviser-application-template" class="md-nav__link">
+    Acquiring the Teamstudio Adviser Application Template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-the-teamstudio-adviser-application" class="md-nav__link">
+    Creating the Teamstudio Adviser Application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transaction-logging" class="md-nav__link">
+    Transaction Logging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-control-list-acl" class="md-nav__link">
+    Access Control List (ACL)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheduling-daily-scans" class="md-nav__link">
+    Scheduling Daily Scans
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-adviser-workstation" class="md-nav__link">
+    Installing the Adviser Workstation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing the Adviser Workstation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hcl-notes-client-workstation-prerequisites" class="md-nav__link">
+    HCL Notes Client Workstation Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#launching-the-adviser-workstation" class="md-nav__link">
+    Launching the Adviser Workstation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-connectivity" class="md-nav__link">
+    Server Connectivity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#console-commands" class="md-nav__link">
+    Console Commands
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrading-adviser" class="md-nav__link">
+    Upgrading Adviser
+  </a>
+  
+    <nav class="md-nav" aria-label="Upgrading Adviser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-adviser-server" class="md-nav__link">
+    Upgrade Adviser Server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-adviser-workstation-62-or-later" class="md-nav__link">
+    Upgrade Adviser Workstation 6.2  or later
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-adviser-workstation-61-or-earlier" class="md-nav__link">
+    Upgrade Adviser Workstation 6.1 or earlier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browsers-and-saved-passwords" class="md-nav__link">
+    Browsers and Saved Passwords
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importing-usage-data-from-usage-auditor" class="md-nav__link">
+    Importing Usage Data from Usage Auditor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing/" class="md-nav__link">
+        Importing Data from Usage Auditor
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Using Teamstudio Adviser
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Using Teamstudio Adviser" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Using Teamstudio Adviser
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        Using Teamstudio Adviser
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../catalog/" class="md-nav__link">
+        Catalog
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        Usage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../complexity/" class="md-nav__link">
+        Complexity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guidance/" class="md-nav__link">
+        Guidance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jobs/" class="md-nav__link">
+        Jobs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filters/" class="md-nav__link">
+        Filters
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exporting/" class="md-nav__link">
+        Exporting Data
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Settings
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Settings" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Settings
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings_servers/" class="md-nav__link">
+        Servers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings_filters/" class="md-nav__link">
+        Filters
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings_scans/" class="md-nav__link">
+        Scans
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings_complexity/" class="md-nav__link">
+        Complexity
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../release/" class="md-nav__link">
+        Release Notes
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#upgrading-an-existing-installation" class="md-nav__link">
+    Upgrading an Existing Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hcl-domino-server-system-requirements" class="md-nav__link">
+    HCL Domino Server System Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites-for-usage-data-collection" class="md-nav__link">
+    Prerequisites for Usage Data Collection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-and-configuring-teamstudio-adviser-application" class="md-nav__link">
+    Installing and Configuring Teamstudio Adviser Application
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing and Configuring Teamstudio Adviser Application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acquiring-the-teamstudio-adviser-application-template" class="md-nav__link">
+    Acquiring the Teamstudio Adviser Application Template
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-the-teamstudio-adviser-application" class="md-nav__link">
+    Creating the Teamstudio Adviser Application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transaction-logging" class="md-nav__link">
+    Transaction Logging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-control-list-acl" class="md-nav__link">
+    Access Control List (ACL)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheduling-daily-scans" class="md-nav__link">
+    Scheduling Daily Scans
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-adviser-workstation" class="md-nav__link">
+    Installing the Adviser Workstation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing the Adviser Workstation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hcl-notes-client-workstation-prerequisites" class="md-nav__link">
+    HCL Notes Client Workstation Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#launching-the-adviser-workstation" class="md-nav__link">
+    Launching the Adviser Workstation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-connectivity" class="md-nav__link">
+    Server Connectivity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#console-commands" class="md-nav__link">
+    Console Commands
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrading-adviser" class="md-nav__link">
+    Upgrading Adviser
+  </a>
+  
+    <nav class="md-nav" aria-label="Upgrading Adviser">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-adviser-server" class="md-nav__link">
+    Upgrade Adviser Server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-adviser-workstation-62-or-later" class="md-nav__link">
+    Upgrade Adviser Workstation 6.2  or later
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-adviser-workstation-61-or-earlier" class="md-nav__link">
+    Upgrade Adviser Workstation 6.1 or earlier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browsers-and-saved-passwords" class="md-nav__link">
+    Browsers and Saved Passwords
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importing-usage-data-from-usage-auditor" class="md-nav__link">
+    Importing Usage Data from Usage Auditor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="installing-teamstudio-adviser">Installing Teamstudio Adviser</h1>
+<p>Teamstudio Adviser consists of two components, an HCL Domino application hosted on a Domino server, and an executable program that runs on a workstation with an HCL Notes client installed.</p>
+<p>The Adviser server application provides Adviser's browser-based user interface, generates reports on databases and users for the Adviser modules, and stores all data collected by Adviser. Adviser server is deployed by creating an NSF based the template <em>TSAdviser.ntf</em> on the desired server, and configuring it via web browser.</p>
+<p>The Adviser Workstation is responsible for collecting the data that forms the basis for the reports generated by the Adviser server. Adviser Workstation is deployed by running an installer (contained in the server NSF) on a workstation installation of HCL Notes. The installed program is configured by the installer to connect to the Adviser server, and remains running to process Adviser scans as needed. Scans are resource intensive processes; running scans from a client workstation limits the impact of Adviser on server performance, and allows easier configuration and access to servers in multiple domains.</p>
+<h2 id="upgrading-an-existing-installation">Upgrading an Existing Installation</h2>
+<p>If you are upgrading an existing installation of Adviser 6.0 or above, you can skip directly to the <a href="#upgrading-adviser">upgrading</a> section. Otherwise continue to follow the instructions below.</p>
+<h2 id="hcl-domino-server-system-requirements">HCL Domino Server System Requirements</h2>
+<p>Teamstudio Adviser is supported on all HCL-supported Notes/Domino versions.**</p>
+<p>The web interface for Teamstudio Adviser can be hosted on Domino servers with the HTTP task enabled.</p>
+<ul>
+<li>For Domino 8.5.3, the server must have a minimum of Fix Pack 3 installed, and must have Upgrade Pack 1 installed (or equivalent version of the Xpages Extension Library).</li>
+<li>The required components are included in Domino 9.0 and greater; no additional components are required.</li>
+</ul>
+<p>The Adviser Workstation can be run on a Notes Client version 8.5.3 and higher (32-bit) running on supported versions of Microsoft Windows. We recommend the most recent Fix Pack version also be installed on the HCL Notes workstation.</p>
+<p>** Adviser is known to run well in most 8.5.3+ Notes/Domino environments, however, Teamstudio support may be limited regarding issues related to unsupported versions of Notes or Domino.</p>
+<h2 id="prerequisites-for-usage-data-collection">Prerequisites for Usage Data Collection</h2>
+<p>The Usage module of Adviser aggregates and reports on data collected by the HCL Domino server’s Activity Logging task.</p>
+<p>In order to use Usage Auditor, Activity Logging will need to be enabled and running on the HCL Domino server(s) that will be scanned by the Adviser application.</p>
+<p>Below are the instructions for enabling Activity Logging for your HCL Domino server(s):</p>
+<ol>
+<li>Open the Domino Directory on the server(s) that will be scanned by Teamstudio Adviser.</li>
+<li>Navigate to the View <em>Configuration -&gt; Servers -&gt; Configurations</em>.</li>
+<li>If a document already exists for the HCL Domino server(s) that will be scanned then place the document into Edit mode. If there is not a document for the HCL Domino server(s) that will be scanned then click the “Add Configuration” Action button.</li>
+<li>If this is a new document then list the HCL Domino server(s) the will be scanned by Teamstudio Adviser.<ul>
+<li>If you are intending on scanning multiple HCL Domino servers then you can list them all here.</li>
+</ul>
+</li>
+<li>Switch to the Activity Logging tab and ensure that Activity Logging is enabled.</li>
+<li>In the “Enabled logging types” field ensure that the following options are selected:<ul>
+<li>Domino.AGENT</li>
+<li>Domino.HTTP</li>
+<li>Domino.Notes.Database</li>
+<li>Domino.Notes.Session</li>
+</ul>
+</li>
+<li>Save and close the document.</li>
+</ol>
+<p>This will also enable the Activity Logging task on the HCL Domino server(s) that you listed. If you listed multiple HCL Domino servers on the document you must make sure that the Domino Directory is replicated to the additional servers.</p>
+<figure>
+<p><img alt="Install Configuration" src="../img/install_config.png" /></p>
+</figure>
+<p>By default, Activity Logging is stored the <em>log.nsf</em> database on the HCL Domino server, and the retention period for <em>log.nsf</em> applies to activity as well. By default, Adviser will collect usage data every night and will import any new data. If collection fails, no data will be lost as long as the problem is resolved within the retention period.</p>
+<h2 id="installing-and-configuring-teamstudio-adviser-application">Installing and Configuring Teamstudio Adviser Application</h2>
+<h3 id="acquiring-the-teamstudio-adviser-application-template">Acquiring the Teamstudio Adviser Application Template</h3>
+<p>The Teamstudio Adviser application is comprised of two parts.</p>
+<ol>
+<li>The Teamstudio Adviser Domino application file (.NSF.)</li>
+<li>The Teamstudio Adviser Workstation client (command line interface.)</li>
+</ol>
+<p>Both of these parts are contained within an HCL Domino Template file which can be obtained from the Teamstudio Website at the following URL: <a href="https://www.teamstudio.com/adviser-download-page">https://www.teamstudio.com/adviser-download-page</a>.</p>
+<h3 id="creating-the-teamstudio-adviser-application">Creating the Teamstudio Adviser Application</h3>
+<p>Once you have acquired the Teamstudio Adviser application template, you can create the Teamstudio Adviser application where the data will be stored.</p>
+<p>This is a simple process to perform by following the steps below.</p>
+<ol>
+<li>Move the template file into your HCL Notes Client’s Data directory.</li>
+<li>From your HCL Notes Client select the following menu option <em>File -&gt; Application -&gt; New...</em>.</li>
+<li>In the dialog that is presented, enter the following information.<ul>
+<li><strong>Server</strong> Select the server where you wish to place the Adviser application.</li>
+<li><strong>Title</strong> This is normally <em>Teamstudio Adviser</em>.</li>
+<li><strong>File name</strong> This is normally <em>TSAdviser.nsf</em>. You can also indicate a subdirectory at the beginning of the file name (e.g., <em>Teamstudio\TSAdviser.nsf</em>.)</li>
+<li><strong>Template</strong> Select the <em>Teamstudio Adviser</em> template from the list.</li>
+</ul>
+</li>
+</ol>
+<p>Once these options have been entered you can press <em>OK</em> to create the application.</p>
+<p>Once the application has been created it will automatically launch into your HCL Notes client. You may receive a Certificate Warning message. This is due to the fact that the design of the Teamstudio Adviser application is currently signed by a Teamstudio ID. To re-sign with your organization’s Notes Signature follow the steps below.</p>
+<ol>
+<li>Open your HCL Domino Administrator application.</li>
+<li>Switch to the HCL Domino server where you created the Teamstudio Adviser application.</li>
+<li>From the <em>Files</em> tab, locate the Teamstudio Adviser application.</li>
+<li>Right click on the Teamstudio Adviser application and select <em>Sign...</em></li>
+<li>In the dialog that is presented, select either <em>Active User’s ID</em> if you are using a Notes ID which has the ability to properly sign designs on the server or optionally select <em>Active Server’s ID</em> to sign the design with the HCL Domino server’s ID file.</li>
+<li>Click <em>OK</em> to complete the process.</li>
+</ol>
+<p>Design signing on the HCL Domino server will take approximately 1-5 minutes.</p>
+<p>If installation is successful, you should see the application home screen similar to the image below.</p>
+<figure>
+<p><img alt="Install Home" src="../img/install_home.png" /></p>
+</figure>
+<h3 id="transaction-logging">Transaction Logging</h3>
+<p>If Domino Transaction Logging is enabled on the server where the Adviser server NSF is deployed, be sure to disable it for the Adviser database by checking <em>Disable transaction logging</em> in the Advanced tab of the database properties dialog. Transaction Logging is not needed for adviser since scans can be safely repeated if there is an error or outage. Enabling transaction logging may cause problems on the server, since the large number of updates Adviser makes while updating its documents can cause the transaction logs to hit size limits.</p>
+<h3 id="access-control-list-acl">Access Control List (ACL)</h3>
+<p>By default, Teamstudio Adviser server requires that the ACL entry <em>Anonymous</em> be defined as <em>No Access</em> and given the privilege <em>Read Public Documents</em> – this setting allows the Adviser workstation to trigger server-side job processing when client-side jobs have completed. Anonymous access cannot be used to create jobs or access data. Anonymous should not be set to a higher level of access, as authentication is required by the Adviser services that support the web browser application.  Allowing anonymous higher levels of access will prevent the server from requiring authentication. </p>
+<p>If the environment does not allow Anonymous access (for example, it is prohibited at the server level via the Directory's Server document), it is possible to configure Adviser to store and use an HTTP Username/Password combination for this access.  For more information, contact Teamstudio support at techsupport@teamstudio.com.</p>
+<p>In general, other ACL settings in Adviser are applied to the browser application in the same manner they are applied in traditional Notes applications.</p>
+<p>The <em>-Default-</em> access setting can be used to assign any level of access desired in place of anonymous access.</p>
+<h3 id="scheduling-daily-scans">Scheduling Daily Scans</h3>
+<p>Since Adviser extracts activity data from the server's log.nsf, which typically keeps 7-10 days of data, it is important to run Usage Scans on a regular basis to ensure the data is up-to-date and without gaps.</p>
+<p>To ensure that overnight scans occur, within the Teamstudio Adviser application there is a scheduled agent that needs to be enabled. To enable this Scheduled Agent follow the steps below.</p>
+<ol>
+<li>Locate the newly created Teamstudio Adviser application on you HCL Notes Workspace.</li>
+<li>Right click on the Teamstudio Adviser application and from the menu that is presented select <em>Application -&gt; Go To Agents</em>.</li>
+<li>In the list of Agents, locate and select the agent <em>Scheduled Nightly Scan</em>.</li>
+<li>At the top of the Agents list, click on the button labeled <em>Enable</em>.</li>
+</ol>
+<p>You can now close your HCL Domino Designer.</p>
+<p>By default, this agent will run once daily, at 1:00 AM. The run time can be modified to another time if desired.</p>
+<p>The <em>Schedule Nightly Scan</em> agent initiates the same process as triggering a manual scan using the <em>Scan Now</em> button in the application. The scan will update Catalog information, import Usage since the last scan, and recalculate any affected metrics. Workstation processing must be enabled for the scan request to be processed.</p>
+<h3 id="configuration">Configuration</h3>
+<p>The final step in configuring the Teamstudio Adviser server is to select the servers to scan. You can do this from the Settings page in the web application, accessed via the gear icon on the right of the Adviser navigation bar. See <a href="../settings_servers/">Servers</a> for more details.</p>
+<h2 id="installing-the-adviser-workstation">Installing the Adviser Workstation</h2>
+<h3 id="hcl-notes-client-workstation-prerequisites">HCL Notes Client Workstation Prerequisites</h3>
+<p>In order for the Teamstudio Adviser application to collect the data from your HTML Domino server(s) an application must be installed onto a computer where an HCL Notes Client is also installed. This computer will require the following HCL Notes Client configuration.</p>
+<ol>
+<li>Version V8.5.3 with the most recent Fix Pack, Version 9.0.1 with a minimum of Fix Pack 6, or any newer version.</li>
+<li>Authenticated with a Notes ID file which has Full Administration access to the HCL Domino server(s) that will be scanned and where the Teamstudio Adviser application will reside.</li>
+<li>The Security option <em>Don’t prompt for a password from other Notes-based programs</em> enabled. This setting can be located under the HCL Notes menu <em>File -&gt; Security -&gt; User Security...</em>.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Due to the complexity of the Teamstudio Adviser Workstation client’s scanning tasks it is highly recommended that a dedicated computer, either physical or virtual, is used. The computer that is chosen must also be able to remain running without any restarts or being logged off for 24 hours/day 7 days /week.</p>
+</div>
+<p>The Adviser Workstation application is an executable application that run scans from a client workstation. Scanning for and reporting on activity is a resource intensive activity that may access multiple servers and works with file system files as part of the process.</p>
+<p>The data collected during the Workstation scans is written to the server application, and available via the web browser interface.</p>
+<p>Adviser Workstation is intended to run continuously, as it monitors the Adviser Server component, waiting for scans to be scheduled.</p>
+<p>The application must be run by an ID that has a least Reader access to the log.nsf files on the servers to be scanned, as well as any applications for which Complexity data is desired. If the servers exist in multiple domains, the ID and local workstation must be properly cross-certified to all servers.</p>
+<p>The ID must also have Editor level ACL access (with delete rights) to the Adviser Server application.</p>
+<h3 id="installation">Installation</h3>
+<ol>
+<li>On the computer where the Adviser workstation will run, log in to the HCL Notes client with the ID that will be used to collect data.</li>
+<li>Ensure that the Notes client setting <em>Don't prompt for password from other Notes-based programs</em> is checked (<em>File &gt; Security &gt; User Security...</em>). This step is required to allow the Adviser Workstation application to run.</li>
+<li>Open the Adviser server application in the Notes client, and click on the link to enable workstation processing in the section titled Adviser Workstation.  </li>
+<li>The Adviser Workstation installer program will launch.  Follow the prompts to install the program. During setup, a settings page will be shown which contains configuration information for the Adviser Workstation and its connection to the server. Verify the information is correct.
+   <img alt="Workstation Install Settings" src="../img/install_ws_settings.png" /></li>
+</ol>
+<p>When the installation is complete, the installer will offer to launch the Adviser Workstation application.</p>
+<h3 id="launching-the-adviser-workstation">Launching the Adviser Workstation</h3>
+<p>Once installed, the Adviser Workstation can be launched by clicking the same link used to install it, found in the Configuration page of the Adviser application in the section titled <em>Adviser Workstation</em>.</p>
+<figure>
+<p><img alt="Enable Workstation" src="../img/install_ws_enable.png" /></p>
+</figure>
+<p>The Adviser Workstation can also be launched by running the executable Workstation.exe, which is installed by default at &lt;Program Files (x86)&gt;\Teamstudio\Adviser Workstation\Workstation.exe.</p>
+<p>Once launched, the Adviser Workstation application window should open, and begin monitoring for pending scans.</p>
+<figure>
+<p><img alt="Workstaion Window" src="../img/install_ws_window.png" /></p>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Adviser Workstation application needs to continue running at all times to ensure that the scanning processes run to completion. These run every day at 1AM (server time).<br />
+In order to provide an accurate representation of the User Usage for the HCL Domino server(s) being scanned we recommend that this continue for a minimum of 30 days.</p>
+</div>
+<h3 id="server-connectivity">Server Connectivity</h3>
+<p>The Adviser Workstation requires connectivity to the Adviser server via HTTP.</p>
+<p>Most workstation processing, including scanning servers and databases, and writing data to the Adviser server, is handled through the Notes client and NRPC.</p>
+<p>In order to trigger server processing once client side jobs have completed, Adviser invokes a REST service endpoint via HTTP to ensure that the server application is running to process the updated data.</p>
+<p>The default workstation configuration attempts to connect to the server based on the fully-qualified host name specified first in the server document in the server's address book. The connection is attempted without SSL on port 80.</p>
+<p>For servers requiring SSL connections, or connectivity on an alternate port, the configuration can be modified by editing the HTTP Host Name field in the Workstation Configuration document in the workstation database.  By default this field contains only the host name, but a protocol and optional port name can be specified (for example, https://teamstudio.com:499 specifies SSL on port 499). The Notes client acting as the Adviser Workstation must be exited completely and restarted for this setting to take effect. For help configuring these settings, contact Teamstudio support.</p>
+<p>Due to limitations with the Java 6 JVM currently embedded in Notes, SSL that use large key sizes may not work correctly.</p>
+<p>If Anonymous connections are disallowed on the server hosting Adviser, the Workstation can be optionally configured to use HTTP authentication credentials.  The user name and password used for login are reversibly hashed to prevent casual access, and stored in a Notes database locally on the workstation in fields encryped with the current ID. To enable the use of authentication, use the command "http auth" from the workstation console (<em>help http auth</em> prints command usage.)</p>
+<h3 id="console-commands">Console Commands</h3>
+<p>The Adviser Workstation supports a limited number of administrative commands from the console. To view a list of enabled commands, type <em>help</em> at the console. If additional usage information has been provided for a command, typing <em>help &lt;command&gt;</em> will display it.</p>
+<h2 id="upgrading-adviser">Upgrading Adviser</h2>
+<p>To upgrade from a previous version of Adviser 6.0 or greater, follow the steps below.  </p>
+<h3 id="upgrade-adviser-server">Upgrade Adviser Server</h3>
+<ol>
+<li>Sign the new template with the appropriate ID to execute code on the target server.</li>
+<li>Refresh the design of the server Adviser database from the new template.</li>
+<li>Restart the HTTP task on the server using the command <em>restart task http</em>. This is equivalent to <em>quit http</em> followed by <em>load http</em> - note that <em>tell http restart</em> will not fully release the JVM and update the new code.</li>
+</ol>
+<h3 id="upgrade-adviser-workstation-62-or-later">Upgrade Adviser Workstation 6.2  or later</h3>
+<ol>
+<li>Exit the Adviser Workstation application, if running.</li>
+<li>Uninstall Adviser Workstation from the Windows <em>Add / Remove Programs</em> control panel.</li>
+<li>Install the new Adviser Workstation from the Configuration page in the Adviser server NSF, following the instructions above.</li>
+</ol>
+<h3 id="upgrade-adviser-workstation-61-or-earlier">Upgrade Adviser Workstation 6.1 or earlier</h3>
+<p>The Adviser Workstation install prior to 6.2 ran the workstation component as a locally scheduled agent in the Notes client, from the Notes application <em>TSAdviserWS.nsf</em> located in the root of the Notes data directory. To upgrade, follow these steps.</p>
+<ol>
+<li>Exit the Notes client acting as the workstation completely (this can be confirmed using task manager).</li>
+<li>Delete <em>TSAdviserWs.nsf</em> from the client's data directory.</li>
+<li>Restart the Notes client and open the Adviser Server application.</li>
+<li>Follow the instructions above for installing Adviser Workstation.</li>
+<li>In the browser UI, schedule a new scan. This will update the data as needed for the new version, and enable any new features. It is safe to schedule a scan while waiting for the workstation to restart; the scan will begin once the workstation is active.</li>
+</ol>
+<p>If you have been running a previous Beta version of Adviser Workstation 6.2, which runs as a command-line application, exit the application and install the new Workstation application by following the instructions above. Depending on the version, you may be prompted to uninstall Adviser Workstation via Windows' Programs and Features control panel prior to installing the new version.</p>
+<h3 id="browsers-and-saved-passwords">Browsers and Saved Passwords</h3>
+<p>Adviser does not currently support using saved passwords in browsers. Previously saved passwords can be removed via the browser's settings page.</p>
+<h3 id="importing-usage-data-from-usage-auditor">Importing Usage Data from Usage Auditor</h3>
+<p>Usage data from Teamstudio Usage Auditor can be imported if the setting <em>Save Supporting Data</em> was enabled during the period of usage collection. Click <a href="../importing/">here</a> for more information.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Documentation" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Documentation
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../importing/" class="md-footer__link md-footer__link--next" aria-label="Next: Importing Data from Usage Auditor" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Importing Data from Usage Auditor
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e84347e.min.js"></script>
+      
+    
+  </body>
+</html>
